@@ -1,0 +1,135 @@
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #0a0f1c;
+  color: #e5e7eb;
+}
+
+/* NAV */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 50px;
+  position: sticky;
+  top: 0;
+  background: rgba(10, 15, 28, 0.7);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.05);
+}
+
+nav a {
+  margin: 0 10px;
+  color: #9ca3af;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #38bdf8;
+}
+
+/* HERO */
+.hero {
+  height: 90vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-content {
+  text-align: center;
+  margin-top: 120px;
+}
+
+.tag {
+  color: #38bdf8;
+  letter-spacing: 2px;
+  font-size: 12px;
+}
+
+.hero h1 {
+  font-size: 52px;
+  max-width: 800px;
+  margin: 20px auto;
+}
+
+.sub {
+  color: #94a3b8;
+  max-width: 600px;
+  margin: auto;
+}
+
+/* CTA */
+.cta a {
+  display: inline-block;
+  margin: 15px;
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.cta a:first-child {
+  background: #38bdf8;
+  color: black;
+}
+
+.cta a:last-child {
+  border: 1px solid #38bdf8;
+  color: #38bdf8;
+}
+
+.cta a:hover {
+  transform: translateY(-3px);
+}
+
+/* SECTIONS */
+section {
+  padding: 80px 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+/* PROJECT CARDS */
+.card {
+  background: rgba(255,255,255,0.03);
+  border: 1px solid rgba(255,255,255,0.08);
+  padding: 20px;
+  border-radius: 14px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  border-color: #38bdf8;
+}
+
+
+/* GRID */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+#contact a {
+  color: #38bdf8;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: 0.3s;
+}
+
+#contact a:hover {
+  border-bottom: 1px solid #38bdf8;
+}
+
+.cursor {
+  display: inline-block;
+  margin-left: 5px;
+  color: #38bdf8;
+  animation: blink 0.8s infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
