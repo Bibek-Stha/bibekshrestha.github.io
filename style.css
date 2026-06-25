@@ -46,9 +46,18 @@ nav a:hover {
 }
 
 .hero h1 {
-  font-size: 52px;
+  font-size: clamp(2rem, 8vw, 52px);
   max-width: 800px;
+
   margin: 20px auto;
+
+  line-height: 1.2;
+
+  padding: 0 16px;
+
+  word-break: break-word;
+
+  overflow-wrap: break-word;
 }
 
 .sub {
@@ -128,8 +137,46 @@ section {
   animation: blink 0.8s infinite;
 }
 
+#typing {
+  display: inline;
+  white-space: normal;
+}
+
+.cursor {
+  vertical-align: top;
+}
+
 @keyframes blink {
   50% {
     opacity: 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  nav {
+    padding: 15px 20px;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .hero {
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-content {
+    margin-top: 60px;
+    padding: 0 16px;
+  }
+
+  .cta {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cta a {
+    width: 220px;
   }
 }
